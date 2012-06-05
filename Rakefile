@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/sleepingstu/bicycle"
   gem.license = "MIT"
   gem.summary = %Q{Why walk when you can cycle}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{A conveniance gem for cycling through a set of values, much like the 'cycle' functionality found in Rails, but is independant of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself.}
   gem.email = "sleepingstu@gmail.com"
   gem.authors = ["Stuart Chinery"]
   # dependencies defined in Gemfile
