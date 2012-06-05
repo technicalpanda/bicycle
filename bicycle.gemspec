@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Stuart Chinery"]
   s.date = "2012-06-05"
-  s.description = "A conveniance gem for cycling through a set of values, much like the 'cycle' functionality found in Rails, but is independant of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself."
+  s.description = "TODO: longer description of your gem"
   s.email = "sleepingstu@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
