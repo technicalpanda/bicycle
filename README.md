@@ -1,7 +1,7 @@
 bicycle
 =======
 
-A conveniance gem for cycling through a set of values, much like the ['cycle'](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-cycle) functionality found in Rails, but is independant of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself.  
+A conveniance gem for cycling through a set of values, much like the ['cycle'](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-cycle) functionality found in Rails, but is independant of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself.
 
 Installation:
 -------------
@@ -32,6 +32,11 @@ For example:
 <% end %>
 </table>
 ```
+
+TODO
+----
+
+Currently only allows one 'cycle' instantance at a time, so want to change that.
 
 Contributing to bicycle
 -----------------------
