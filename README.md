@@ -27,13 +27,13 @@ include Bicycle
 
 To use, call the cycle function with a set of values you wish to cycle through.
 
-```ruby
+```erb
 <%= cycle("odd", "even") %>
 ```
 
 For example:
 
-```ruby
+```erb
 <% @items.each do |item| %>
   <tr class="<%= cycle("odd", "even") %>">
     <td>item</td>
@@ -43,19 +43,19 @@ For example:
 
 If you want to call multiple instances of the cycle function, you can by specifying a name attribute, like so: '
 
-```ruby
+```erb
 <%= cycle("red", "green", "blue", :name => "colours") %>
 ```
 
 You can also reset a given cycle by calling:
 
-```ruby
+```erb
 <% reset_cycle("colours") %>
 ```
 
 For example:
 
-```ruby
+```erb
 <% @items.each do |item| %>
   <tr class="<%= cycle("odd", "even", :name => "row_class") -%>">
     <td>
