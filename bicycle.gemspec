@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Stuart Chinery"]
   s.date = "2012-06-06"
-  s.description = "A conveniance gem for cycling through a set of values, much like the 'cycle' functionality found in Rails, but is independant of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself."
+  s.description = "A convenience gem for cycling through a set of values, ported from the 'cycle' functionality found in Rails. It is independent of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself."
   s.email = "sleepingstu@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -45,6 +45,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
       s.add_development_dependency(%q<turn>, ["~> 0.9.5"])
+      s.add_development_dependency(%q<debugger>, [">= 0"])
     else
       s.add_dependency(%q<minitest>, [">= 0"])
       s.add_dependency(%q<yard>, ["~> 0.6.0"])
@@ -52,6 +53,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<simplecov>, [">= 0"])
       s.add_dependency(%q<turn>, ["~> 0.9.5"])
+      s.add_dependency(%q<debugger>, [">= 0"])
     end
   else
     s.add_dependency(%q<minitest>, [">= 0"])
@@ -60,6 +62,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     s.add_dependency(%q<simplecov>, [">= 0"])
     s.add_dependency(%q<turn>, ["~> 0.9.5"])
+    s.add_dependency(%q<debugger>, [">= 0"])
   end
 end
 
