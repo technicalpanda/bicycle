@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = "bicycle"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Stuart Chinery"]
+  s.authors = ["Stuart Chinery", "Dave Hrycyszyn"]
   s.date = "2012-06-06"
   s.description = "A convenience gem for cycling through a set of values, ported from the 'cycle' functionality found in Rails. It is independent of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself."
-  s.email = "sleepingstu@gmail.com"
+  s.email = "stuart.chinery@headlondon.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
