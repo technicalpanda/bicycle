@@ -52,6 +52,7 @@ You can also reset a given cycle by calling:
 ```ruby
 <% reset_cycle("colours") %>
 ```
+
 For example:
 
 ```ruby
@@ -68,6 +69,7 @@ For example:
     </td>
   </tr>
 <% end %>
+```
 
 Contributing to bicycle
 -----------------------
