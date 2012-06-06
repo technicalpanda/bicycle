@@ -1,6 +1,3 @@
-require 'simplecov'
-SimpleCov.start
-
 require 'rubygems'
 require 'bundler'
 begin
@@ -12,8 +9,6 @@ rescue Bundler::BundlerError => e
 end
 
 require 'minitest/spec'
-begin; require 'turn/autorun'; rescue LoadError; end
-require 'ruby-debug'
 
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))

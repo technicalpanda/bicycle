@@ -10,7 +10,4 @@ group :development do
   gem "yard", "~> 0.6.0"
   gem "bundler"
   gem "jeweler", "~> 1.6.4"
-  gem "simplecov"
-  gem 'turn', "~> 0.9.5"
-  gem 'debugger'
 end
