@@ -85,6 +85,6 @@ Contributing to bicycle
 Copyright
 ---------
 
-Copyright (c) 2012 Stuart Chinery. See LICENSE.txt for
+Copyright (c) 2012 ['Stuart Chinery'](http://www.headlondon.com/who-we-are#stuart-chinery) and ['Dave Hrycyszyn'](http://www.headlondon.com/who-we-are#david-hrycyszyn), ['Head London'](http://www.headlondon.com). See LICENSE.txt for
 further details.
 
