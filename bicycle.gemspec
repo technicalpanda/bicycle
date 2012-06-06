@@ -44,12 +44,14 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
+      s.add_development_dependency(%q<turn>, ["~> 0.9.5"])
     else
       s.add_dependency(%q<minitest>, [">= 0"])
       s.add_dependency(%q<yard>, ["~> 0.6.0"])
       s.add_dependency(%q<bundler>, [">= 0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<simplecov>, [">= 0"])
+      s.add_dependency(%q<turn>, ["~> 0.9.5"])
     end
   else
     s.add_dependency(%q<minitest>, [">= 0"])
@@ -57,6 +59,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bundler>, [">= 0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     s.add_dependency(%q<simplecov>, [">= 0"])
+    s.add_dependency(%q<turn>, ["~> 0.9.5"])
   end
 end
 
