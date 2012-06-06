@@ -10,7 +10,7 @@ module Bicycle
   # anytime using the current_cycle method.
   #
   def cycle(first_value, *values)
-    if (values.last.instance_of? Hash)
+    if values.last.is_a?(Hash)
       params = values.pop
       name = params[:name]
     else
