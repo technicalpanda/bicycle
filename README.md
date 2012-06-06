@@ -1,7 +1,7 @@
 bicycle
 =======
 
-A conveniance gem for cycling through a set of values, much like the ['cycle'](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-cycle) functionality found in Rails, but is independant of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself.
+A conveniance gem for cycling through a set of values, like the ['cycle'](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-cycle) functionality found in Rails, but is independant of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself.
 
 Installation:
 -------------
@@ -19,24 +19,55 @@ gem 'bicycle'
 Usage
 -----
 
-To use, call the cycle function like so 'Bicycle.cycle("Foo", "Bar", "Huh?")' with a set of values you wish to cycle through.
+Add the following to your app.rb file:
+
+```ruby
+include Bicycle
+```
+
+To use, call the cycle function with a set of values you wish to cycle through.
+
+```ruby
+<%= cycle("odd", "even") %>
+```
 
 For example:
 
 ```ruby
-<table>
 <% @items.each do |item| %>
- <tr class="<%= Bicycle.cycle("odd", "even") %>">
-   <td>item</td>
- </tr>
+  <tr class="<%= cycle("odd", "even") %>">
+    <td>item</td>
+  </tr>
 <% end %>
-</table>
 ```
 
-TODO
-----
+If you want to call multiple instances of the cycle function, you can by specifying a name attribute, like so: '
 
-Currently only allows one 'cycle' instantance at a time, so want to change that.
+```ruby
+<%= cycle("red", "green", "blue", :name => "colours") %>
+```
+
+You can also reset a given cycle by calling:
+
+```ruby
+<% reset_cycle("colours") %>
+```
+For example:
+
+```ruby
+<% @items.each do |item| %>
+  <tr class="<%= cycle("odd", "even", :name => "row_class") -%>">
+    <td>
+      <% item.values.each do |value| %>
+        <%# Create a named cycle "colors" %>
+        <span style="color:<%= cycle("red", "green", "blue", :name => "colors") -%>">
+        <%= value %>
+        </span>
+      <% end %>
+      <% reset_cycle("colors") %>
+    </td>
+  </tr>
+<% end %>
 
 Contributing to bicycle
 -----------------------
