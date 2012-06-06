@@ -2,16 +2,16 @@ require 'helper'
 
 describe "When cycling" do
 	before do
-		@value1 = Bicycle.cycle("Foo", "Bar", "Huh?")
-		@value2 = Bicycle.cycle("Foo", "Bar", "Huh?")
-		@value3 = Bicycle.cycle("Foo", "Bar", "Huh?")
-		@value4 = Bicycle.cycle("Foo", "Bar", "Huh?")
+		@values = []
+		for i in (0..3)
+			@values[i] = Bicycle.cycle("Foo", "Bar", "Huh?")
+		end
 	end
 
 	it "should return a value in the cycle order" do
-		assert_equal "Foo", @value1
-		assert_equal "Bar", @value2
-		assert_equal "Huh?", @value3
-		assert_equal "Foo", @value4
+		assert_equal "Foo", @values[0]
+		assert_equal "Bar", @values[1]
+		assert_equal "Huh?", @values[2]
+		assert_equal "Foo", @values[3]
 	end
 end
