@@ -3,8 +3,8 @@ bicycle
 
 A convenience gem for cycling through a set of values, ported from the ['cycle'](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-cycle) functionality found in Rails. It is independent of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself.
 
-Installation:
--------------
+Installation
+============
 
 ```
 gem install bicycle
@@ -17,7 +17,7 @@ gem 'bicycle'
 ```
 
 Usage
------
+=====
 
 Add the following to your app.rb file:
 
@@ -72,7 +72,7 @@ For example:
 ```
 
 Contributing to bicycle
------------------------
+=======================
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
@@ -83,7 +83,7 @@ Contributing to bicycle
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
 Copyright
----------
+=========
 
 Copyright (c) 2012 [Stuart Chinery](http://www.headlondon.com/who-we-are#stuart-chinery) and [Dave Hrycyszyn](http://www.headlondon.com/who-we-are#david-hrycyszyn), [headlondon.com](http://www.headlondon.com). See LICENSE.txt for
 further details.
