@@ -11,4 +11,5 @@ group :development do
   gem "bundler"
   gem "jeweler", "~> 1.6.4"
   gem "simplecov"
+  gem 'turn', "~> 0.9.5"
 end
