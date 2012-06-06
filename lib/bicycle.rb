@@ -9,18 +9,17 @@ module Bicycle
   # and passing the name of the cycle. The current cycle string can be obtained
   # anytime using the current_cycle method.
   #
-  def cycle(first_value, *values)
-    if values.last.is_a?(Hash)
+  def cycle(*values)
+    if (values.last.instance_of? Hash)
       params = values.pop
       name = params[:name]
     else
       name = "default"
     end
-    values.unshift(first_value)
 
     cycle = get_cycle(name)
     unless cycle && cycle.values == values
-      cycle = set_cycle(name, Cycle.new(*values))
+      cycle = set_cycle(name, Cycle.new(values))
     end
     cycle.to_s
   end
@@ -45,8 +44,8 @@ module Bicycle
   class Cycle #:nodoc:
     attr_reader :values
 
-    def initialize(first_value, *values)
-      @values = values.unshift(first_value)
+    def initialize(values)
+      @values = values
       reset
     end
 
