@@ -1,9 +1,7 @@
 bicycle
 -------
 
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/sleepingstu/bicycle)
-
-[![Build Status](https://secure.travis-ci.org/sleepingstu/bicycle.png)](http://travis-ci.org/sleepingstu/bicycle)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/sleepingstu/bicycle) [![Build Status](https://secure.travis-ci.org/sleepingstu/bicycle.png)](http://travis-ci.org/sleepingstu/bicycle)
 
 A convenience gem for cycling through a set of values, ported from the ['cycle'](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-cycle) functionality found in Rails. It is independent of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself.
 
