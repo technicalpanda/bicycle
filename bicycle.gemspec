@@ -3,9 +3,13 @@
 # Instead, edit Jeweler::Tasks in Rakefile, and run 'rake gemspec'
 # -*- encoding: utf-8 -*-
 
+# Maintain your gem's version:
+require "bicyle/version"
+
+
 Gem::Specification.new do |s|
   s.name = "bicycle"
-  s.version = "0.1.1"
+  s.version = Bicycle::VERSION
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Stuart Chinery", "Dave Hrycyszyn"]
