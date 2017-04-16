@@ -3,13 +3,10 @@
 # Instead, edit Jeweler::Tasks in Rakefile, and run 'rake gemspec'
 # -*- encoding: utf-8 -*-
 
-# Maintain your gem's version:
-require "bicyle/version"
-
 
 Gem::Specification.new do |s|
   s.name = "bicycle"
-  s.version = Bicycle::VERSION
+  s.version = File.read("VERSION").split("\n").first
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Stuart Chinery", "Dave Hrycyszyn"]
@@ -43,21 +40,21 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<minitest>, [">= 0"])
-      s.add_development_dependency(%q<yard>, ["~> 0.6.0"])
-      s.add_development_dependency(%q<bundler>, [">= 0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
+      s.add_development_dependency(%q<minitest>, ["~> 0"])
+      s.add_development_dependency(%q<yard>, ["~> 0.6"])
+      s.add_development_dependency(%q<bundler>, ["~> 0"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.6"])
     else
-      s.add_dependency(%q<minitest>, [">= 0"])
-      s.add_dependency(%q<yard>, ["~> 0.6.0"])
-      s.add_dependency(%q<bundler>, [">= 0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
+      s.add_dependency(%q<minitest>, ["~> 0"])
+      s.add_dependency(%q<yard>, ["~> 0.6"])
+      s.add_dependency(%q<bundler>, ["~> 0"])
+      s.add_dependency(%q<jeweler>, ["~> 1.6"])
     end
   else
-    s.add_dependency(%q<minitest>, [">= 0"])
-    s.add_dependency(%q<yard>, ["~> 0.6.0"])
-    s.add_dependency(%q<bundler>, [">= 0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
+    s.add_dependency(%q<minitest>, ["~> 0"])
+    s.add_dependency(%q<yard>, ["~> 0.6"])
+    s.add_dependency(%q<bundler>, ["~> 0"])
+    s.add_dependency(%q<jeweler>, ["~> 1.6"])
   end
 end
 

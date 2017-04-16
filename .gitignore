@@ -51,3 +51,4 @@ pkg
 .rvmrc
 
 .DS_Store
+*.gem

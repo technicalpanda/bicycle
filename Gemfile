@@ -8,7 +8,7 @@ source "http://rubygems.org"
 group :development do
   gem "bundler"
   gem "jeweler"
-  gem "minitest", ">= 0"
+  gem "minitest"
   gem "turn"
   gem "yard"
 end
