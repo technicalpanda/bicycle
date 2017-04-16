@@ -3,6 +3,10 @@
 # Instead, edit Jeweler::Tasks in Rakefile, and run 'rake gemspec'
 # -*- encoding: utf-8 -*-
 
+# Maintain your gem's version:
+require "bicyle/version"
+
+
 Gem::Specification.new do |s|
   s.name = "bicycle"
   s.version = Bicycle::VERSION
