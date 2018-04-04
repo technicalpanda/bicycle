@@ -10,13 +10,18 @@ rescue Bundler::BundlerError => e
   exit e.status_code
 end
 
-require "minitest/autorun"
-
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
 require "bicycle"
-begin; require "turn/autorun"; rescue LoadError; end
-class MiniTest::Unit::TestCase
-end
+
+require "minitest/autorun"
+require "minitest/fail_fast"
+require "minitest/reporters"
+
+Minitest::Reporters.use!(
+  Minitest::Reporters::SpecReporter.new,
+  ENV,
+  Minitest.backtrace_filter
+)
 
 MiniTest::Unit.autorun

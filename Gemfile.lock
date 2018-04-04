@@ -33,6 +33,13 @@ GEM
     mime-types (2.99.3)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
+    minitest-fail-fast (0.1.0)
+      minitest (~> 5)
+    minitest-reporters (1.2.0)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     multi_json (1.13.1)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
@@ -48,10 +55,9 @@ GEM
     rack (2.0.4)
     rake (12.3.1)
     rdoc (6.0.3)
+    ruby-progressbar (1.9.0)
     semver2 (3.4.2)
     thread_safe (0.3.6)
-    turn (0.9.6)
-      ansi
     yard (0.9.12)
 
 PLATFORMS
@@ -61,7 +67,8 @@ DEPENDENCIES
   bundler (~> 1.16)
   jeweler (~> 2.3)
   minitest (~> 5.0)
-  turn (~> 0.9)
+  minitest-fail-fast (~> 0.1)
+  minitest-reporters (~> 1.1)
   yard (~> 0.9.7)
 
 BUNDLED WITH
