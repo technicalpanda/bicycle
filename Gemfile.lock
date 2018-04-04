@@ -32,7 +32,7 @@ GEM
     jwt (1.5.6)
     mime-types (2.99.3)
     mini_portile2 (2.3.0)
-    minitest (4.7.5)
+    minitest (5.11.3)
     multi_json (1.13.1)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
@@ -50,20 +50,19 @@ GEM
     rdoc (6.0.3)
     semver2 (3.4.2)
     thread_safe (0.3.6)
-    turn (0.9.7)
+    turn (0.9.6)
       ansi
-      minitest (~> 4)
     yard (0.9.12)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
-  jeweler
-  minitest
-  turn
-  yard
+  bundler (~> 1.16)
+  jeweler (~> 2.3)
+  minitest (~> 5.0)
+  turn (~> 0.9)
+  yard (~> 0.9.7)
 
 BUNDLED WITH
    1.16.1
