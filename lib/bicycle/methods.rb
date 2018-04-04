@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Bicycle
   module Methods
     # Creates a Cycle object whose _to_s_ method cycles through elements of an
@@ -10,7 +12,7 @@ module Bicycle
     # anytime using the current_cycle method.
     #
     def cycle(*values)
-      if (values.last.instance_of? Hash)
+      if values.last.instance_of? Hash
         params = values.pop
         name = params[:name]
       else
@@ -18,9 +20,7 @@ module Bicycle
       end
 
       cycle = get_cycle(name)
-      unless cycle && cycle.values == values
-        cycle = set_cycle(name, Cycle.new(values))
-      end
+      cycle = set_cycle(name, Cycle.new(values)) unless cycle && cycle.values == values
       cycle.to_s
     end
 
@@ -30,7 +30,7 @@ module Bicycle
     #
     def current_cycle(name = "default")
       cycle = get_cycle(name)
-      cycle.current_value if cycle
+      cycle&.current_value
     end
 
     # Resets a cycle so that it starts from the first element the next time
@@ -38,7 +38,7 @@ module Bicycle
     #
     def reset_cycle(name = "default")
       cycle = get_cycle(name)
-      cycle.reset if cycle
+      cycle&.reset
     end
 
     class Cycle #:nodoc:
@@ -60,7 +60,7 @@ module Bicycle
       def to_s
         value = @values[@index].to_s
         @index = next_index
-        return value
+        value
       end
 
       private
@@ -73,8 +73,8 @@ module Bicycle
         step_index(-1)
       end
 
-      def step_index(n)
-        (@index + n) % @values.size
+      def step_index(num)
+        (@index + num) % @values.size
       end
     end
 
@@ -84,12 +84,12 @@ module Bicycle
     # guaranteed to be reset every time a page is rendered, so it
     # uses an instance variable of ActionView::Base.
     def get_cycle(name)
-      @_cycles = Hash.new unless defined?(@_cycles)
-      return @_cycles[name]
+      @_cycles = {} unless defined?(@_cycles)
+      @_cycles[name]
     end
 
     def set_cycle(name, cycle_object)
-      @_cycles = Hash.new unless defined?(@_cycles)
+      @_cycles = {} unless defined?(@_cycles)
       @_cycles[name] = cycle_object
     end
   end
