@@ -14,14 +14,17 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
 require "bicycle"
 
+require "minitest/spec"
 require "minitest/autorun"
-require "minitest/fail_fast"
 require "minitest/reporters"
+require "minitest/fail_fast"
+
+class Minitest::Test
+  extend Minitest::Spec::DSL
+end
 
 Minitest::Reporters.use!(
   Minitest::Reporters::SpecReporter.new,
   ENV,
   Minitest.backtrace_filter
 )
-
-MiniTest::Unit.autorun
