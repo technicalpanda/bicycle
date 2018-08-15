@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "helper"
-require "dummy_app"
 
 module Bicycle
   class MethodsTest < Minitest::Test

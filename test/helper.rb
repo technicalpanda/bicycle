@@ -13,11 +13,12 @@ end
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
 require "bicycle"
+require "dummy_app"
 
-require "minitest/spec"
 require "minitest/autorun"
-require "minitest/reporters"
 require "minitest/fail_fast"
+require "minitest/reporters"
+require "minitest/spec"
 
 class Minitest::Test
   extend Minitest::Spec::DSL
