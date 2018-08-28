@@ -35,6 +35,11 @@ GEM
     minitest (5.11.3)
     minitest-fail-fast (0.1.0)
       minitest (~> 5)
+    minitest-macos-notification (0.0.3)
+      minitest (~> 5.0)
+      minitest-reporters (~> 1.3.1)
+      os (~> 1.0)
+      terminal-notifier (~> 2.0)
     minitest-reporters (1.3.2)
       ansi
       builder
@@ -51,12 +56,14 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
+    os (1.0.0)
     psych (3.0.2)
     rack (2.0.5)
     rake (12.3.1)
     rdoc (6.0.4)
     ruby-progressbar (1.10.0)
     semver2 (3.4.2)
+    terminal-notifier (2.0.0)
     thread_safe (0.3.6)
     yard (0.9.16)
 
@@ -68,6 +75,7 @@ DEPENDENCIES
   jeweler (~> 2.3)
   minitest (~> 5.0)
   minitest-fail-fast (~> 0.1)
+  minitest-macos-notification (~> 0)
   minitest-reporters (~> 1.3)
   yard (~> 0.9)
 
