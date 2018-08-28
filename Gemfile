@@ -7,6 +7,6 @@ group :development do
   gem "jeweler", "~> 2.3"
   gem "minitest", "~> 5.0"
   gem "minitest-fail-fast", "~> 0.1"
-  gem "minitest-reporters", "1.3.0" # locking as current issue with 1.3.1
-  gem "yard", "~> 0.9.7"
+  gem "minitest-reporters", "~> 1.3"
+  gem "yard", "~> 0.9"
 end
