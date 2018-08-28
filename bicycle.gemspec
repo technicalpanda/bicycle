@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
     "test/dummy_app.rb",
     "test/helper.rb"
   ]
-  s.homepage = "http://github.com/sleepingstu/bicycle".freeze
+  s.homepage = "http://github.com/schinery/bicycle".freeze
   s.licenses = ["MIT".freeze]
   s.rubygems_version = "2.7.6".freeze
   s.summary = "Why walk when you can cycle".freeze
@@ -68,4 +68,3 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<yard>.freeze, ["~> 0.9.7"])
   end
 end
-
