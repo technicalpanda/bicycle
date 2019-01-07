@@ -1,13 +1,11 @@
-bicycle
--------
+# bicycle
 
 [![Gem Version](https://badge.fury.io/rb/bicycle.svg)](http://badge.fury.io/rb/bicycle)
 [![Build Status](https://travis-ci.org/sleepingstu/bicycle.svg?branch=master)](https://travis-ci.org/sleepingstu/bicycle)
 
 A convenience gem for cycling through a set of values, ported from the ['cycle'](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-cycle) functionality found in Rails. It is independent of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself.
 
-Installation
-============
+## Installation
 
 ```
 gem install bicycle
@@ -19,8 +17,7 @@ In a Gemfile:
 gem 'bicycle'
 ```
 
-Usage
-=====
+## Usage
 
 Add the following to your app.rb file:
 
@@ -74,20 +71,20 @@ For example:
 <% end %>
 ```
 
-Contributing to bicycle
-=======================
+## Development
 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-Copyright
-=========
+To install this gem onto your local machine, run `bundle exec rake install`.
 
-Copyright (c) 2012 [Stuart Chinery](http://www.headlondon.com/who-we-are#stuart-chinery) and [Dave Hrycyszyn](http://www.headlondon.com/who-we-are#david-hrycyszyn) - [headlondon.com](http://www.headlondon.com).
+## Contributing
 
-See LICENSE.txt for further details.
+Bug reports and pull requests are welcome on GitHub at https://github.com/schinery/bicycle. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Code of Conduct
+
+Everyone interacting in the `Minitest::MacosNotification` project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/schinery/bicycle/blob/master/CODE_OF_CONDUCT.md).
