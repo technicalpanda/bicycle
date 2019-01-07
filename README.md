@@ -87,4 +87,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the `Minitest::MacosNotification` project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/schinery/bicycle/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the `Bicycle` project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/schinery/bicycle/blob/master/CODE_OF_CONDUCT.md).
