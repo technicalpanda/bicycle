@@ -7,7 +7,7 @@ require "bicycle/version"
 Gem::Specification.new do |spec|
   spec.name          = "bicycle"
   spec.version       = Bicycle::VERSION
-  spec.authors       = ["Stuart"]
+  spec.authors       = ["Stuart Chinery"]
   spec.email         = ["stuart.chinery@gmail.com"]
 
   spec.summary       = "A convenience gem for cycling through a set of values"
