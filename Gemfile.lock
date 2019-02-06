@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bicycle (0.6.1)
+    bicycle (0.7.0)
 
 GEM
   remote: https://rubygems.org/
