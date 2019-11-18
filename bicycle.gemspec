@@ -30,5 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest-fail-fast", "~> 0.1.0"
   spec.add_development_dependency "minitest-macos-notification", "~> 0.0.5"
   spec.add_development_dependency "minitest-reporters", "~> 1.3.5"
-  spec.add_development_dependency "rake", "~> 12.3.2"
+  spec.add_development_dependency "rake", "~> 13.0.1"
 end
