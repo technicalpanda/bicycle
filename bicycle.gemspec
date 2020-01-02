@@ -12,10 +12,10 @@ Gem::Specification.new do |spec|
                      "functionality found in Rails. It is independent of which framework you use so " \
                      "will run in Sinatra, Padrino or straight up Ruby itself."
   spec.email = ["stuart.chinery@gmail.com"]
+  spec.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.md", "VERSION"]
   spec.homepage = "https://github.com/schinery/bicycle"
   spec.license = "MIT"
   spec.summary = "A convenience gem for cycling through a set of values"
-  spec.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.md", "VERSION"]
 
   spec.add_development_dependency "byebug", "~> 11.0"
   spec.add_development_dependency "minitest", "~> 5.13"

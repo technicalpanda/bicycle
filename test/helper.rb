@@ -21,8 +21,10 @@ require "minitest/macos_notification"
 require "minitest/reporters"
 require "minitest/spec"
 
-class Minitest::Test
-  extend Minitest::Spec::DSL
+module Minitest
+  class Test
+    extend Minitest::Spec::DSL
+  end
 end
 
 Minitest::Reporters.use!(
