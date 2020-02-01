@@ -14,8 +14,8 @@ GEM
     minitest (5.14.0)
     minitest-fail-fast (0.1.0)
       minitest (~> 5)
-    minitest-macos-notification (0.3.1)
-      minitest (~> 5.13)
+    minitest-macos-notification (0.3.2)
+      minitest (~> 5.14)
       minitest-reporters (~> 1.4)
       os (~> 1.0)
       terminal-notifier (~> 2.0)
@@ -39,20 +39,20 @@ GEM
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.10.1)
     terminal-notifier (2.0.0)
-    unicode-display_width (1.6.0)
+    unicode-display_width (1.6.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bicycle!
-  byebug (~> 11.0)
-  minitest (~> 5.13)
+  byebug (~> 11.1)
+  minitest (~> 5.14)
   minitest-fail-fast (~> 0.1)
   minitest-macos-notification (~> 0.3)
   minitest-reporters (~> 1.4)
   rake (~> 13.0)
-  rubocop (~> 0.78)
+  rubocop (~> 0.79)
 
 BUNDLED WITH
    2.1.3
