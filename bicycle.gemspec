@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.md", "VERSION"]
   spec.homepage = "https://github.com/schinery/bicycle"
   spec.license = "MIT"
+  spec.required_ruby_version = ">= 2.5"
   spec.summary = "A convenience gem for cycling through a set of values"
 
   spec.add_development_dependency "byebug", "~> 11.1"
