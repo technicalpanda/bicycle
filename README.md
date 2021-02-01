@@ -1,7 +1,7 @@
 # bicycle
 
 [![Gem Version](https://badge.fury.io/rb/bicycle.svg)](http://badge.fury.io/rb/bicycle)
-![CI Build](https://github.com/technicalpanda/bicycle/workflows/.github/workflows/ci.yml/badge.svg)
+![CI](https://github.com/technicalpanda/bicycle/workflows/CI/badge.svg)]
 
 A convenience gem for cycling through a set of values, ported from the ['cycle'](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-cycle) functionality found in Rails. It is independent of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself.
 
