@@ -11,9 +11,9 @@ Gem::Specification.new do |spec|
   spec.description = "A convenience gem for cycling through a set of values, ported from the 'cycle' " \
                      "functionality found in Rails. It is independent of which framework you use so " \
                      "will run in Sinatra, Padrino or straight up Ruby itself."
-  spec.email = ["stuart.chinery@gmail.com"]
+  spec.email = ["code@technicalpanda.co.uk"]
   spec.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.md", "VERSION"]
-  spec.homepage = "https://github.com/schinery/bicycle"
+  spec.homepage = "https://github.com/technicalpanda/bicycle"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.5"
   spec.summary = "A convenience gem for cycling through a set of values"

@@ -1,7 +1,6 @@
 # bicycle
 
 [![Gem Version](https://badge.fury.io/rb/bicycle.svg)](http://badge.fury.io/rb/bicycle)
-[![Build Status](https://travis-ci.org/schinery/bicycle.svg?branch=main)](https://travis-ci.org/schinery/bicycle)
 
 A convenience gem for cycling through a set of values, ported from the ['cycle'](http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-cycle) functionality found in Rails. It is independent of which framework you use so will run in Sinatra, Padrino or straight up Ruby itself.
 
@@ -79,7 +78,7 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/schinery/bicycle. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/technicalpanda/bicycle. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -87,4 +86,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the `Bicycle` project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/schinery/bicycle/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the `Bicycle` project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/technicalpanda/bicycle/blob/main/CODE_OF_CONDUCT.md).
